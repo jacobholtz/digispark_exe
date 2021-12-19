@@ -3,9 +3,11 @@
 
 int main(int c, char *argv[]){
 	printf("exe executed\n");
+	char rm[] = "rm ";
 	char path[] = "argv[0]";
 	getchar();
-	system(strcat('rm ',path));
+	strcat(rm,path)
+	system(rm);
 	getchar();
 	return 0;
 }
