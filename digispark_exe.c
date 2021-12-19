@@ -3,7 +3,7 @@
 
 int main(int c, char *argv[]){
 	printf("exe executed\n");
+	printf(argv[0]);
 	getchar();
-	remove(argv[0]);
 	return 0;
 }
