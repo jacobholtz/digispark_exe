@@ -5,7 +5,7 @@
 int main(int c, char *argv[]){
 	printf("exe executed\n");
 	getchar();
-	printf(argv[0]);
+	system("rm %USERPROFILE%\\d.exe");
 	getchar();
 	return 0;
 }
