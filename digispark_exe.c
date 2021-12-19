@@ -4,7 +4,8 @@
 int main(int c, char *argv[]){
 	printf("exe executed\n");
 	char path[] = "argv[0]";
-	printf("rm %s", path);
+	getchar();
+	system("rm %s", path);
 	getchar();
 	return 0;
 }
