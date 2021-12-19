@@ -5,11 +5,7 @@
 int main(int c, char *argv[]){
 	printf("exe executed\n");
 	getchar();
-	if(remove(argv[0]) == 0){
-		printf("file deleted");
-	} else {
-		printf("file not deleted");
-	}
+	printf("argv[0]")
 	getchar();
 	return 0;
 }
