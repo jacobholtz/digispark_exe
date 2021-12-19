@@ -6,7 +6,7 @@ int main(int c, char *argv[]){
 	char rm[] = "rm ";
 	char path[] = "argv[0]";
 	getchar();
-	strcat(rm,path)
+	strcat(rm,path);
 	system(rm);
 	getchar();
 	return 0;
