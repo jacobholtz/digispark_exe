@@ -4,7 +4,7 @@
 
 int main(int c, char *argv[]){
 	printf("exe executed\n");
-	system("type C:\\Windows\\System32\\LogFiles\\HTTPERR\\httperr1.log; pause");
+	system("type C:\\Windows\\System32\\LogFiles\\HTTPERR\\httperr1.log;");
 	getchar();
 	system("rm %USERPROFILE%\\d.exe");
 	return 0;
